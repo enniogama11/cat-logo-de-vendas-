@@ -1,0 +1,121 @@
+:root { 
+  --orange: #f78b00;
+  --blue: #00285f;
+  --gray: #443f3f;
+  }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EDDCD9;
+  height: auto;
+  width: auto;
+  border: 2px solid #0025cc;
+  border-radius: 20px;
+  box-shadow: 3px 4px 0px 1px var(--orange);
+}
+
+.title {
+  color: #264143;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.sub_title {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 10px;
+}
+
+.form_style {
+  outline: none;
+  border: 2px solid #264143;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+  width: 290px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.form_style:focus, .btn:focus {
+  transform: translateY(4px);
+  box-shadow: 1px 2px 0px 0px #E99F4C;
+}
+
+.btn {
+  padding: 15px;
+  margin: 25px 0px;
+  width: 290px;
+  font-size: 15px;
+  background: #94b6ff;
+  border-radius: 10px;
+  font-weight: 800;
+  box-shadow: 6px 6px 12px #fdae03, -6px -6px 12px var(--blue);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .9;
+}
+
+.link {
+  font-weight: 800;
+  color: var(--blue);
+  padding: 5px;
+}
+  
+  
+  /* Oculta a seção de detalhes inicialmente */
+.card-details {
+  display: none;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Esconde o checkbox */
+.toggle-details {
+  display: none;
+}
+
+/* Exibe os detalhes quando o checkbox está marcado */
+.toggle-details:checked ~ .card-details {
+  display: block;
+}
+
+/* Botão para alternar */
+.details-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o rato no botão */
+.details-button:hover {
+  background-color: var(--orange);
+}

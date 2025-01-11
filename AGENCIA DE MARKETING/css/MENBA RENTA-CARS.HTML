@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site da MENBA Renta Car, especializada em aluguer e venda de carros no Kilamba Kiaxi, Luanda.">
+  <title>MENBA Renta Car</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      background: #555;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .testimonials, .faq {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Botão Voltar ao Topo */
+    .back-to-top {
+      position: fixed;
+      bottom: 60px;
+      right: 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .back-to-top:hover {
+      transform: scale(1.1);
+      background: #0056b3;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MENBA Renta Car</h1>
+    <p>Especialistas em aluguer e venda de carros no Kilamba Kiaxi, Luanda.</p>
+  </header>
+  <nav>
+    <a href="#about">Sobre Nós</a>
+    <a href="#features">Funcionalidades</a>
+    <a href="#testimonials">Testemunhos</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contactos</a>
+  </nav>
+
+
+
+
+
+
+  <section id="Catalogo" tabindex="-1">
+    <div class="content">
+        <div class="title-wrapper-catalog">
+            <p>Encontre o que você quer</p>
+            <h3>CATÁLOGO</h3>
+        </div>
+        <div class="filter-card">
+            <input type="text" class="search-input" placeholder="Escolha o seu modelo favorito">
+            <button class="search-buttom">Pesquisar</button>
+        </div>
+        <div class="card-wrapper">
+            <div class="card-item">
+                <img src="img/—Pngtree—car_5650006.png" alt="car" class="card-img">
+                <h3>Audi Supra TT</h3>
+                <p class="short-description">
+                    Um carro que combina tecnologia, eficiência e design arrojado.
+                </p>
+
+                <!-- Checkbox para controlar a visibilidade -->
+                <input type="checkbox" id="details-1" class="toggle-details">
+                <!-- Label que funciona como botão -->
+                <label for="details-1" class="details-button">Ver detalhes</label>
+
+                <!-- Conteúdo dos detalhes -->
+                <div class="card-details">
+                    <h4>Especificações</h4>
+                    <ul>
+                        <li><strong>Motor:</strong> 2.0L Turbo</li>
+                        <li><strong>Lugares:</strong> 5</li>
+                        <li><strong>Tecnologias:</strong> Sistema de navegação, assistente de estacionamento</li>
+                        <li><strong>Interior:</strong> Bancos de couro, volante multifuncional</li>
+                        <li><strong>Exterior:</strong> Faróis LED, espaço de carga amplo</li>
+                        <li><strong>Eficiência:</strong> 15 km/L</li>
+                        <li><strong>Segurança:</strong> 6 airbags, controle de estabilidade</li>
+                    </ul>
+                    <h4>Galeria</h4>
+                    <div class="gallery">
+                        <img src="img/car1.jpg" alt="Imagem 1">
+                        <img src="img/car2.jpg" alt="Imagem 2">
+                        <img src="img/car3.jpg" alt="Imagem 3">
+                        <img src="img/car4.jpg" alt="Imagem 4">
+                        <img src="img/car5.jpg" alt="Imagem 5">
+                    </div>
+                    <h4>Vídeo</h4>
+                    <video controls>
+                        <source src="videos/car-demo.mp4" type="video/mp4">
+                        O seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <!-- Secção Sobre Nós -->
+    <section id="about">
+      <h2>Sobre Nós</h2>
+      <p>A MENBA Renta Car tem mais de 5 anos de experiência no mercado de aluguer e venda de veículos, garantindo qualidade e confiança para os nossos clientes em Luanda.</p>
+    </section>
+    
+    <!-- Secção Funcionalidades -->
+    <section id="features">
+      <h2>Funcionalidades</h2>
+      <ul>
+        <li>Catálogo de veículos actualizado para venda e aluguer.</li>
+        <li>Reserva online rápida e simples.</li>
+        <li>Gestão de serviços de manutenção para veículos.</li>
+        <li>Notificações automáticas para confirmações e lembretes.</li>
+      </ul>
+    </section>
+    
+    <!-- Secção Testemunhos -->
+    <section id="testimonials" class="testimonials">
+      <h2>Testemunhos</h2>
+      <p>"Ótimo serviço! Recomendo para quem procura qualidade e atendimento excelente." - Cliente satisfeito</p>
+      <p>"Muito profissionais. Encontrei o carro que procurava rapidamente!" - Cliente feliz</p>
+    </section>
+    
+    <!-- Secção FAQ -->
+    <section id="faq" class="faq">
+      <h2>Perguntas Frequentes</h2>
+      <div>
+        <h3>Como faço para reservar?</h3>
+        <p>Escolha o veículo no nosso catálogo e siga os passos para completar a reserva online.</p>
+      </div>
+      <div>
+        <h3>Posso cancelar a reserva?</h3>
+        <p>Sim, os cancelamentos são permitidos seguindo as nossas políticas.</p>
+      </div>
+    </section>
+    
+    <!-- Secção Contactos -->
+    <section id="contact">
+      <h2>Contactos</h2>
+      <p><strong>Morada:</strong> Kilamba Kiaxi, Luanda</p>
+      <p><strong>Telefone:</strong> +244 923 456 789</p>
+      <p><strong>Email:</strong> info@menbarentacar.com</p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 MENBA Renta Car. Todos os direitos reservados.</p>
+  </footer>
+  <a href="#top" class="back-to-top">↑</a>
+</body>
+</html>
